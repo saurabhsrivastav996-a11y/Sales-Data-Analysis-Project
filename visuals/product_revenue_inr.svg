@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Sample product revenue in INR crore. Laptop is the highest-revenue product.">
+<rect width="1100" height="560" rx="24" fill="#FFF9F0"/>
+<style>text{font-family:Arial,"Segoe UI",sans-serif} .title{font-size:27px;font-weight:700;fill:#18324B} .sub{font-size:14px;fill:#587083} .label{font-size:13px;fill:#35536A} .value{font-size:14px;font-weight:700;fill:#18324B}</style>
+<text x="48" y="52" class="title">Revenue by Product</text>
+<text x="48" y="78" class="sub">Sample product revenue in INR crore. Laptop is the highest-revenue product.</text>
+<text x="174" y="148" text-anchor="end" class="label">Mouse</text>
+<rect x="190" y="126" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="126" width="31.9" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="147" class="value">₹0.54 Cr · 1.7%</text>
+<text x="174" y="200" text-anchor="end" class="label">Keyboard</text>
+<rect x="190" y="178" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="178" width="59.6" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="199" class="value">₹1.01 Cr · 3.2%</text>
+<text x="174" y="252" text-anchor="end" class="label">Headphones</text>
+<rect x="190" y="230" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="230" width="86.6" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="251" class="value">₹1.47 Cr · 4.6%</text>
+<text x="174" y="304" text-anchor="end" class="label">Monitor</text>
+<rect x="190" y="282" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="282" width="176.4" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="303" class="value">₹3.00 Cr · 9.4%</text>
+<text x="174" y="356" text-anchor="end" class="label">Tablet</text>
+<rect x="190" y="334" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="334" width="297.6" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="355" class="value">₹5.07 Cr · 15.9%</text>
+<text x="174" y="408" text-anchor="end" class="label">Phone</text>
+<rect x="190" y="386" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="386" width="484.8" height="30" rx="8" fill="#16845B"/>
+<text x="946" y="407" class="value">₹8.25 Cr · 25.8%</text>
+<text x="174" y="460" text-anchor="end" class="label">Laptop</text>
+<rect x="190" y="438" width="740" height="30" rx="8" fill="#EFE6D9"/>
+<rect x="190" y="438" width="740.0" height="30" rx="8" fill="#E87524"/>
+<text x="946" y="459" class="value">₹12.60 Cr · 39.4%</text>
+<text x="190" y="532" class="sub">Revenue share is calculated across the full sample.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440" role="img" aria-label="Share of sample revenue by category.">
+<rect width="980" height="440" rx="24" fill="#FFF9F0"/>
+<style>text{font-family:Arial,"Segoe UI",sans-serif} .title{font-size:27px;font-weight:700;fill:#18324B} .sub{font-size:14px;fill:#587083} .label{font-size:13px;fill:#35536A} .value{font-size:14px;font-weight:700;fill:#18324B}</style>
+<text x="48" y="52" class="title">Category Share of Sales</text>
+<text x="48" y="78" class="sub">Share of sample revenue by category.</text>
+<rect x="70.0" y="150" width="760.3" height="66" fill="#E87524"/>
+<text x="450.1" y="191" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">90.5%</text>
+<rect x="70" y="260" width="14" height="14" rx="3" fill="#E87524"/>
+<text x="98" y="273" class="label">Electronics</text>
+<text x="910" y="273" text-anchor="end" class="value">₹28.92 Cr · 90.5%</text>
+<rect x="830.3" y="150" width="79.7" height="66" fill="#16845B"/>
+<rect x="70" y="318" width="14" height="14" rx="3" fill="#16845B"/>
+<text x="98" y="331" class="label">Accessories</text>
+<text x="910" y="331" text-anchor="end" class="value">₹3.03 Cr · 9.5%</text>
+<text x="70" y="416" class="sub">The sample contains product/category totals only; no region or customer fields are available.</text>
+</svg>
