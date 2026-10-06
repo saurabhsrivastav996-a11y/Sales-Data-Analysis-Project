@@ -14,7 +14,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "sales_data.csv"
 VISUALS_DIR = ROOT / "visuals"
-INR_PER_USD = 83.0  # Illustrative localization assumption; not a historical FX rate.
+INR_PER_USD = 95.0  # Illustrative localization assumption; not a historical FX rate.
 
 REQUIRED_COLUMNS = {
     "OrderID",
@@ -108,6 +108,26 @@ def format_crore(value: float) -> str:
     return f"₹{crore} crore"
 
 
+def format_inr(value: float, decimals: int = 2) -> str:
+    """Format a rupee amount with Indian digit grouping."""
+    quantum = Decimal("1") if decimals == 0 else Decimal("0.01")
+    rounded = Decimal(str(value)).quantize(quantum, rounding=ROUND_HALF_UP)
+    whole, _, fraction = f"{rounded:.{decimals}f}".partition(".")
+    sign = "-" if whole.startswith("-") else ""
+    digits = whole.lstrip("-")
+    if len(digits) > 3:
+        last_three, leading = digits[-3:], digits[:-3]
+        pairs = []
+        while leading:
+            pairs.insert(0, leading[-2:])
+            leading = leading[:-2]
+        digits = ",".join([*pairs, last_three])
+    formatted = sign + digits
+    if decimals:
+        formatted += "." + fraction
+    return f"₹{formatted}"
+
+
 def create_charts(monthly_revenue, product_revenue, category_revenue) -> list[Path]:
     """Save three dependency-light, accessible SVG charts in an India palette."""
     VISUALS_DIR.mkdir(exist_ok=True)
@@ -162,7 +182,7 @@ def create_charts(monthly_revenue, product_revenue, category_revenue) -> list[Pa
         elements.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius}" fill="{color}" stroke="{cream}" stroke-width="3"/>')
     peak_x, peak_y = points[peak_index]
     elements.append(f'<text x="{peak_x:.1f}" y="{peak_y - 18:.1f}" text-anchor="middle" class="value">Peak: ₹{monthly_crore.iloc[peak_index]:.2f} Cr</text>')
-    elements.append(f'<text x="{left}" y="{height - 28}" class="sub">Source amounts localized at illustrative ₹83/USD</text>')
+    elements.append(f'<text x="{left}" y="{height - 28}" class="sub">Source amounts localized at illustrative ₹{INR_PER_USD:.0f}/USD</text>')
     save_svg("monthly_revenue_inr.svg", elements)
 
     # Horizontal product bars keep all labels legible and show share of total sales.
@@ -220,7 +240,7 @@ def main() -> None:
 
     print("\nKEY RESULTS (INR, FIXED ILLUSTRATIVE RATE)")
     print(f"Total sales: {format_crore(summary['total_inr'])}")
-    print(f"Average order value: ₹{summary['average_order_value_inr']:,.2f}")
+    print(f"Average order value: {format_inr(summary['average_order_value_inr'])}")
     print(f"Average units per order: {summary['average_units_per_order']:.2f}")
     print(
         f"Top product: {summary['top_product']} — "

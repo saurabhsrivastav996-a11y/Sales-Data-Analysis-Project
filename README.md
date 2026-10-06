@@ -2,7 +2,7 @@
 
 An end-to-end Python and pandas portfolio project that audits a sample retail sales dataset, checks its revenue calculations, and explores product, category, and monthly performance. The presentation localizes the source's dollar-denominated amounts to Indian rupees and uses an India-inspired saffron, cream, green, and navy visual palette.
 
-> **Data and currency note:** The source repository labels monetary values with `$`. This project converts those sample values using a fixed illustrative rate of **₹83 per US dollar**. It is a presentation assumption, not a historical exchange rate or evidence that these transactions occurred in India. The dataset has no customer, city, or state fields, so the analysis does not make customer or regional claims.
+> **Data and currency note:** The source repository labels monetary values with `$`. This project converts those sample values using a fixed illustrative rate of **₹95 per US dollar**. It is a presentation assumption, not a historical exchange rate or evidence that these transactions occurred in India. The dataset has no customer, city, or state fields, so the analysis does not make customer or regional claims.
 
 ## Highlights
 
@@ -16,13 +16,13 @@ An end-to-end Python and pandas portfolio project that audits a sample retail sa
 | Measure | Result |
 | --- | ---: |
 | Sample orders | 3,481 |
-| Total sample sales | ₹31.96 crore |
-| Average order value | ₹91,798.33 |
+| Total sample sales | ₹36.58 crore |
+| Average order value | ₹1,05,070.38 |
 | Average units per order | 2.49 |
-| Top product by revenue | Laptop — ₹12.60 crore (39.4% of sales) |
-| Top category | Electronics — ₹28.92 crore (90.5% of sales) |
-| Highest month | July — ₹3.24 crore |
-| Lowest month | February — ₹2.00 crore |
+| Top product by revenue | Laptop — ₹14.42 crore (39.4% of sales) |
+| Top category | Electronics — ₹33.10 crore (90.5% of sales) |
+| Highest month | July — ₹3.71 crore |
+| Lowest month | February — ₹2.29 crore |
 
 These are descriptive results from the provided sample. July is the highest month in the data; the analysis does not infer why it peaked.
 
