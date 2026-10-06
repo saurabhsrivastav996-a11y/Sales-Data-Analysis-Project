@@ -61,7 +61,3 @@ visuals/                    Generated PNG charts
 ## Resume description
 
 > Built a reproducible Python/pandas sales analysis for 3,481 sample orders; validated data quality and revenue calculations, localized monetary results to INR using a documented fixed-rate assumption, and visualized product, category, and monthly performance.
-
-## Provenance
-
-This is an adaptation of the beginner project and sample files in [ggiss3272/Beginner-Data-Analysis-Python](https://github.com/ggiss3272/Beginner-Data-Analysis-Python). The original repository does not provide a license file. Keep this attribution with the adapted work and check the source owner's reuse terms before redistribution. The analysis, documentation, and INR presentation in this repository are the adaptation work; the underlying sample data is not claimed as original.
